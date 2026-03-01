@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{eb316dda-9bf0-4f73-87e1-f5dbdb478d86}</ProjectGuid>
+    <RootNamespace>imsfwupgrade</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;WIN32;_LIB;_STATIC_IMS;_CRT_SECURE_NO_WARNINGS;WINVER=0x0A00;_WIN32_WINNT=0x0A00;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>ext\ims-lib\include;ext\ims-lib\lib\spline;ext\ims-lib\lib\enumser;ext\ims-lib\lib\sqlite3;ext\ims-lib\lib\FTDI;ext\ims-lib\lib\CyAPI\inc;C:\Users\david\.conan2\p\libxm7177d08f49e30\p\include\libxml2;ext\ims-lib\res;C:\Program Files\boost\boost_1_84_0;C:\Users\david\.conan2\p\zlib98d2cd36e4f46\p\include;C:\Users\david\.conan2\p\libic989531291d9f6\p\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\david\.conan2\p\libic989531291d9f6\p\lib;C:\Users\david\.conan2\p\libxm7177d08f49e30\p\lib;Y:\svn_sw\09-Isomet\iMS_SDK\lib\CyAPI\lib\x64;Y:\svn_sw\09-Isomet\iMS_SDK\lib\FTDI-Driver\amd64;C:\Users\david\.conan2\p\zlib98d2cd36e4f46\p\lib;C:\Program Files\boost\boost_1_84_0\lib64-msvc-14.3;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ftd2xx.lib;Setupapi.lib;libxml2_a.lib;zlib.lib;Ws2_32.lib;psapi.lib;libboost_regex-vc143-mt-gd-x64-1_84.lib;libboost_chrono-vc143-mt-gd-x64-1_84.lib;libboost_log-vc143-mt-gd-x64-1_84.lib;iconv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;WIN32;_LIB;_STATIC_IMS;_CRT_SECURE_NO_WARNINGS;WINVER=0x0A00;_WIN32_WINNT=0x0A00;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>ext\ims-lib\include;ext\ims-lib\lib\spline;ext\ims-lib\lib\enumser;ext\ims-lib\lib\sqlite3;ext\ims-lib\lib\FTDI;ext\ims-lib\lib\CyAPI\inc;C:\Users\david\.conan2\p\libxm7177d08f49e30\p\include\libxml2;ext\ims-lib\res;C:\Program Files\boost\boost_1_84_0;C:\Users\david\.conan2\p\zlib98d2cd36e4f46\p\include;C:\Users\david\.conan2\p\libic989531291d9f6\p\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\david\.conan2\p\libic989531291d9f6\p\lib;C:\Users\david\.conan2\p\libxm7177d08f49e30\p\lib;Y:\svn_sw\09-Isomet\iMS_SDK\lib\CyAPI\lib\x64;Y:\svn_sw\09-Isomet\iMS_SDK\lib\FTDI-Driver\amd64;C:\Users\david\.conan2\p\zlib98d2cd36e4f46\p\lib;C:\Program Files\boost\boost_1_84_0\lib64-msvc-14.3;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ftd2xx.lib;Setupapi.lib;libxml2_a.lib;zlib.lib;Ws2_32.lib;psapi.lib;libboost_regex-vc143-mt-x64-1_84.lib;libboost_chrono-vc143-mt-x64-1_84.lib;libboost_log-vc143-mt-x64-1_84.lib;iconv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ext\ims-lib\lib\CyAPI\CyAPI.cpp" />
+    <ClCompile Include="ext\ims-lib\lib\enumser\enumser.cpp" />
+    <ClCompile Include="ext\ims-lib\lib\sqlite3\readonlymemvfs.cpp" />
+    <ClCompile Include="ext\ims-lib\lib\sqlite3\sqlite3.c" />
+    <ClCompile Include="ext\ims-lib\src\AcoustoOptics.cpp" />
+    <ClCompile Include="ext\ims-lib\src\Auxiliary.cpp" />
+    <ClCompile Include="ext\ims-lib\src\BulkVerifier.cpp" />
+    <ClCompile Include="ext\ims-lib\src\CM_Common.cpp" />
+    <ClCompile Include="ext\ims-lib\src\CM_CYUSB.cpp" />
+    <ClCompile Include="ext\ims-lib\src\CM_ENET.cpp" />
+    <ClCompile Include="ext\ims-lib\src\CM_FTDI.cpp" />
+    <ClCompile Include="ext\ims-lib\src\CM_RS422.cpp" />
+    <ClCompile Include="ext\ims-lib\src\Compensation.cpp" />
+    <ClCompile Include="ext\ims-lib\src\ConnectionList.cpp" />
+    <ClCompile Include="ext\ims-lib\src\ConnectionManager.cpp" />
+    <ClCompile Include="ext\ims-lib\src\Containers.cpp" />
+    <ClCompile Include="ext\ims-lib\src\CS_ETH.cpp" />
+    <ClCompile Include="ext\ims-lib\src\CS_RS422.cpp" />
+    <ClCompile Include="ext\ims-lib\src\DeviceReport.cpp" />
+    <ClCompile Include="ext\ims-lib\src\Diagnostics.cpp" />
+    <ClCompile Include="ext\ims-lib\src\EEPROM.cpp" />
+    <ClCompile Include="ext\ims-lib\src\FileSystem.cpp" />
+    <ClCompile Include="ext\ims-lib\src\FirmwareUpgrade.cpp" />
+    <ClCompile Include="ext\ims-lib\src\HostReport.cpp" />
+    <ClCompile Include="ext\ims-lib\src\IEventHandler.cpp" />
+    <ClCompile Include="ext\ims-lib\src\IEventTrigger.cpp" />
+    <ClCompile Include="ext\ims-lib\src\Image.cpp" />
+    <ClCompile Include="ext\ims-lib\src\ImageOps.cpp" />
+    <ClCompile Include="ext\ims-lib\src\ImageProject.cpp" />
+    <ClCompile Include="ext\ims-lib\src\IMSSystem.cpp" />
+    <ClCompile Include="ext\ims-lib\src\IMSTypeDefs.cpp" />
+    <ClCompile Include="ext\ims-lib\src\IOReport.cpp" />
+    <ClCompile Include="ext\ims-lib\src\LibVersion.cpp" />
+    <ClCompile Include="ext\ims-lib\src\Message.cpp" />
+    <ClCompile Include="ext\ims-lib\src\PrivateUtil.cpp" />
+    <ClCompile Include="ext\ims-lib\src\ReportManipulation.cpp" />
+    <ClCompile Include="ext\ims-lib\src\SignalPath.cpp" />
+    <ClCompile Include="ext\ims-lib\src\SystemFunc.cpp" />
+    <ClCompile Include="ext\ims-lib\src\tftp_client.cpp" />
+    <ClCompile Include="ext\ims-lib\src\tftp_packet.cpp" />
+    <ClCompile Include="ext\ims-lib\src\ToneBuffer.cpp" />
+    <ClCompile Include="ext\ims-lib\src\WaveShaping.cpp" />
+    <ClCompile Include="ims_fw_upgrade.cpp" />
+    <ClCompile Include="ProgressBar.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ext\ims-lib\include\AcoustoOptics.h" />
+    <ClInclude Include="ext\ims-lib\include\Auxiliary.h" />
+    <ClInclude Include="ext\ims-lib\include\BulkVerifier.h" />
+    <ClInclude Include="ext\ims-lib\include\CM_Common.h" />
+    <ClInclude Include="ext\ims-lib\include\CM_CYUSB.h" />
+    <ClInclude Include="ext\ims-lib\include\CM_ENET.h" />
+    <ClInclude Include="ext\ims-lib\include\CM_FTDI.h" />
+    <ClInclude Include="ext\ims-lib\include\CM_RS422.h" />
+    <ClInclude Include="ext\ims-lib\include\Compensation.h" />
+    <ClInclude Include="ext\ims-lib\include\ConnectionList.h" />
+    <ClInclude Include="ext\ims-lib\include\Containers.h" />
+    <ClInclude Include="ext\ims-lib\include\CS_ETH.h" />
+    <ClInclude Include="ext\ims-lib\include\CS_RS422.h" />
+    <ClInclude Include="ext\ims-lib\include\DeviceReport.h" />
+    <ClInclude Include="ext\ims-lib\include\Diagnostics.h" />
+    <ClInclude Include="ext\ims-lib\include\EEPROM.h" />
+    <ClInclude Include="ext\ims-lib\include\FileSystem.h" />
+    <ClInclude Include="ext\ims-lib\include\FileSystem_p.h" />
+    <ClInclude Include="ext\ims-lib\include\FirmwareUpgrade.h" />
+    <ClInclude Include="ext\ims-lib\include\HostReport.h" />
+    <ClInclude Include="ext\ims-lib\include\IBulkTransfer.h" />
+    <ClInclude Include="ext\ims-lib\include\IConnectionManager.h" />
+    <ClInclude Include="ext\ims-lib\include\IConnectionSettings.h" />
+    <ClInclude Include="ext\ims-lib\include\IEventHandler.h" />
+    <ClInclude Include="ext\ims-lib\include\IEventTrigger.h" />
+    <ClInclude Include="ext\ims-lib\include\Image.h" />
+    <ClInclude Include="ext\ims-lib\include\ImageOps.h" />
+    <ClInclude Include="ext\ims-lib\include\ImageProject.h" />
+    <ClInclude Include="ext\ims-lib\include\Image_p.h" />
+    <ClInclude Include="ext\ims-lib\include\IMSConstants.h" />
+    <ClInclude Include="ext\ims-lib\include\IMSSystem.h" />
+    <ClInclude Include="ext\ims-lib\include\IMSTypeDefs.h" />
+    <ClInclude Include="ext\ims-lib\include\IMSTypeDefs_p.h" />
+    <ClInclude Include="ext\ims-lib\include\IOReport.h" />
+    <ClInclude Include="ext\ims-lib\include\LibVersion.h" />
+    <ClInclude Include="ext\ims-lib\include\Message.h" />
+    <ClInclude Include="ext\ims-lib\include\MessageEvent.h" />
+    <ClInclude Include="ext\ims-lib\include\MessageRegistry.h" />
+    <ClInclude Include="ext\ims-lib\include\PrivateUtil.h" />
+    <ClInclude Include="ext\ims-lib\include\ReportManipulation.h" />
+    <ClInclude Include="ext\ims-lib\include\SignalPath.h" />
+    <ClInclude Include="ext\ims-lib\include\SystemFunc.h" />
+    <ClInclude Include="ext\ims-lib\include\tftp_client.h" />
+    <ClInclude Include="ext\ims-lib\include\tftp_packet.h" />
+    <ClInclude Include="ext\ims-lib\include\ToneBuffer.h" />
+    <ClInclude Include="ext\ims-lib\include\WaveShaping.h" />
+    <ClInclude Include="ext\ims-lib\lib\CyAPI\inc\CyAPI.h" />
+    <ClInclude Include="ext\ims-lib\lib\CyAPI\inc\cyioctl.h" />
+    <ClInclude Include="ext\ims-lib\lib\CyAPI\inc\CyUSB30_def.h" />
+    <ClInclude Include="ext\ims-lib\lib\CyAPI\inc\usb100.h" />
+    <ClInclude Include="ext\ims-lib\lib\CyAPI\inc\usb200.h" />
+    <ClInclude Include="ext\ims-lib\lib\CyAPI\inc\UsbdStatus.h" />
+    <ClInclude Include="ext\ims-lib\lib\CyAPI\inc\VersionNo.h" />
+    <ClInclude Include="ext\ims-lib\lib\enumser\enumser.h" />
+    <ClInclude Include="ext\ims-lib\lib\FTDI\ftd2xx.h" />
+    <ClInclude Include="ext\ims-lib\lib\spline\spline.h" />
+    <ClInclude Include="ext\ims-lib\lib\sqlite3\readonlymemvfs.h" />
+    <ClInclude Include="ext\ims-lib\lib\sqlite3\sqlite3.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ext\ims-lib\res\imshw.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
