@@ -1,0 +1,12 @@
+{
+  "Name": "ims_fw_upgrade",
+  "DependsOn": [],
+  "OutputDir": "dist",
+  "Tasks": [
+    {
+      "Name": "Releasex86",
+      "Script": "build.bat",
+      "Args": ["-c","Release","-o","32"]
+    }
+  ]
+}
