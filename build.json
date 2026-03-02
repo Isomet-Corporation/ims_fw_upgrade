@@ -6,7 +6,7 @@
     {
       "Name": "Releasex86",
       "Script": "build.bat",
-      "Args": ["-c","Release","-o","32"]
+      "Args": ["-c","Release","-a","32","-o","dist"]
     }
   ]
 }
