@@ -2,6 +2,8 @@
   "Name": "ims_fw_upgrade",
   "DependsOn": [],
   "OutputDir": "dist",
+  "ExportDir": "util/ims_fw_upgrade",
+  "SignFiles": ["ims_fw_upgrade.exe"],
   "Tasks": [
     {
       "Name": "Releasex86",
